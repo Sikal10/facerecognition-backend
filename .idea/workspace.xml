@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="790980b0-78a9-4e7b-93a2-c9a1dad6a79c" name="Default Changelist" comment="detecting multiple faces functionality was added">
+      <change beforePath="$PROJECT_DIR$/client/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/client/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/FaceRecognition/FaceRecognition.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/FaceRecognition/FaceRecognition.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Rank/Rank.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Rank/Rank.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/client/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="package.json" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/client" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="1nhTh2ZaBFMdwbnbuaTAZjcH41W" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="15.3.0" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sikal\Desktop\Project\smart-brain" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.dev">
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="server" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="server" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/client/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+        <item itemvalue="npm.server" />
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="790980b0-78a9-4e7b-93a2-c9a1dad6a79c" name="Default Changelist" comment="" />
+      <created>1611841438594</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611841438594</updated>
+      <workItem from="1611841448007" duration="119000" />
+      <workItem from="1611842721206" duration="1785000" />
+      <workItem from="1612487138394" duration="739000" />
+      <workItem from="1612552882666" duration="404000" />
+      <workItem from="1612682603392" duration="28179000" />
+      <workItem from="1612951315749" duration="1598000" />
+      <workItem from="1612953066494" duration="20159000" />
+      <workItem from="1613119393808" duration="19805000" />
+    </task>
+    <task id="LOCAL-00001" summary="added the CLARIFAI api">
+      <created>1612806209732</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1612806209732</updated>
+    </task>
+    <task id="LOCAL-00002" summary="detecting multiple faces functionality was added">
+      <created>1612817849211</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1612817849211</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added the CLARIFAI api" />
+    <MESSAGE value="detecting multiple faces functionality was added" />
+    <option name="LAST_COMMIT_MESSAGE" value="detecting multiple faces functionality was added" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="860" y="285" key="#Usage_Scope" timestamp="1612953168587">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="860" y="285" key="#Usage_Scope/0.0.1536.864@0.0.1536.864" timestamp="1612953168587" />
+    <state x="499" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1611844653187">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="499" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1611844653187" />
+    <state x="548" y="174" key="FileChooserDialogImpl" timestamp="1611841560362">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="548" y="174" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1611841560362" />
+    <state width="1515" height="208" key="GridCell.Tab.0.bottom" timestamp="1613379755659">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1515" height="208" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1613379755659" />
+    <state width="1515" height="208" key="GridCell.Tab.0.center" timestamp="1613379755659">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1515" height="208" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1613379755659" />
+    <state width="1515" height="208" key="GridCell.Tab.0.left" timestamp="1613379755659">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1515" height="208" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1613379755659" />
+    <state width="1515" height="208" key="GridCell.Tab.0.right" timestamp="1613379755659">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1515" height="208" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1613379755659" />
+    <state x="555" y="77" key="SettingsEditor" timestamp="1612953203623">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="555" y="77" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1612953203623" />
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1612817855505">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1612817855505" />
+    <state x="425" y="197" key="run.anything.popup" timestamp="1613153288185">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="425" y="197" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1613153288185" />
+    <state x="814" y="185" key="search.everywhere.popup" timestamp="1612954898925">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="814" y="185" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1612954898925" />
+  </component>
+</project>
