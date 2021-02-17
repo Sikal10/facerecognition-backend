@@ -22,48 +22,68 @@ console.log("result-------->", result);
 // @desc Register a user
 // @route POST/api/users/register
 // @access Public
-
-export const registerUser = async (req, res) => {
-    const {name, email, password} = req.body;
-
-    try {
-        const salt = await bcrypt.genSalt(10);
-        const passcode = await bcrypt.hash(password, salt)
-        console.log("passcode-------->", passcode)
-
-        if (!name || !email || !password) {
-            throw Error("Please enter a valid credential")
-        }
-
-        const response = await db("users").returning("*").insert({
-            email,
-            name,
-            joined: new Date()
-        });
-        await res.json(response[0]);
-
-    } catch (err) {
-        res.status(400).json("unable to register");
+export const registerUser = (req, res) => {
+    const { email, name, password } = req.body;
+    if (!email || !name || !password) {
+        return res.status(400).json('incorrect form submission');
     }
-
-}
+    const hash = bcrypt.hashSync(password);
+    console.log(hash)
+    db.transaction(trx => {
+        trx.insert({
+            hash: hash,
+            email: email
+        })
+            .into('login')
+            .returning('email')
+            .then(loginEmail => {
+                return trx('users')
+                    .returning('*')
+                    .insert({
+                        email: loginEmail[0],
+                        name: name,
+                        joined: new Date()
+                    })
+                    .then(user => {
+                        res.json(user[0]);
+                    })
+            }).then(trx.commit).catch(trx.rollback)
+    }).catch(err => res.status(400).json('unable to register'))
+};
 
 // @desc Log in a user
 // @route POST/api/users/login
 // @access public
-export const loginUser = (req, res) => {
-    if (req.body.email === database.users[0].email && req.body.password === database.users[0].password) {
-        res.json(database.users[0]);
-    } else {
-        res.status(400).json({msg: "Error logging in"})
+export const loginUser = async (req, res) => {
+    const { email, password } = req.body;
+    if (!email || !password) {
+        return res.status(400).json('incorrect form submission');
     }
+    db.select('email', 'hash').from('login')
+        .where('email', '=', email)
+        .then(data => {
+            const isValid = bcrypt.compareSync(password, data[0].hash);
+            if (isValid) {
+                return db.select('*').from('users')
+                    .where('email', '=', email)
+                    .then(user => {
+                        res.json(user[0])
+                    })
+                    .catch(err => res.status(400).json('unable to get user'))
+            } else {
+                res.status(400).json('wrong credentials')
+            }
+        })
+        .catch(err => res.status(400).json('wrong credentials'))
+
 }
 
 // @desc get all users
 // @route GET/api/users
 // @access public
-export const getUsers = (req, res) => {
-    res.json(database.users);
+export const getUsers = async (req, res) => {
+    const allUsers = await db.select("*").from("users");
+    res.json(allUsers);
 }
 
 // @desc get a user by ID
@@ -89,18 +109,13 @@ export const getUser = async (req, res) => {
 // @desc post an image
 // @route POST/api/users/image
 // @access private
-export const userPhotoUpload = (req, res) => {
-    const {id} = req.body;
-    let found = false;
-    database.users.forEach(user => {
-        console.log(user)
-        if (user.id === id) {
-            found = true;
-            user.entries++
-            return res.json(user.entries)
-        }
-    });
-    if (!found) {
-        return res.status(400).json("not found")
+export const userPhotoUpload = async (req, res) => {
+    try {
+        const {id} = req.body;
+        const entries = await db("users").where("id", "=", id).increment("entries", 1).returning("entries");
+        res.json(entries[0]);
+    } catch (err) {
+        res.status(400).json("unable to get entries");
     }
+
 }
